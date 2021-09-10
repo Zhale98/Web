@@ -1,0 +1,121 @@
+﻿@model Web.Models.Rezervaciq
+@{
+
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Резервации</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="custom.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="hotel_reserve_box">
+            <div class="">
+                <center><h3> Резервация </h3></center><br>
+
+
+                <label>Смяна</label>
+
+                <div class="container">
+                    <select class="col-form-label-lg col-12">
+                        @foreach (var smqna in Model.Smeni)
+                        {
+                            <option value='smqna.Id'> @smqna.Nomer</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <span class="form-label">От дата</span>
+                    <input class="form-control" type="date" required>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <span class="form-label">До дата</span>
+                    <input class="form-control" type="date" required>
+                </div>
+            </div>
+            <label>Брой Дни</label>
+            <div class="container ">
+                <select class="col-form-label-lg col-12">
+                    @foreach (var smqna in Model.Smeni)
+                    {
+                        <option value='smqna.Dni'>@smqna.Dni</option>
+                    }
+                </select>
+            </div>
+            <label>Бунгало №</label>
+            <div class="container ">
+                <select class="col-form-label-lg col-12">
+                    @foreach (var smqna in Model.Smeni)
+                    {
+                        <option value='smqna.Id'> @smqna.Bungalo</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ime" class="control-label">Име</label>
+                <input asp-for="Ime" class="form-control" />
+                <span asp-validation-for="Ime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Familiq" class="control-label">Фамилия</label>
+                <input asp-for="Familiq" class="form-control" />
+                <span asp-validation-for="Familiq" class="text-danger"></span>
+            </div>
+            <label>Категория</label>
+            <div class="container ">
+                <select class="col-form-label-lg col-12">
+                    @foreach (var smqna in Model.Smeni)
+                    {
+                        <option value='smqna.Id'> @smqna.Kategoriq</option>
+                    }
+                </select>
+            </div>
+            <label>Дете до 7год.</label>
+            <div class="container ">
+                <select class="col-form-label-lg col-12">
+                    @foreach (var smqna in Model.Smeni)
+                    {
+                        <option value='smqna.Id'> @smqna.Dete_7</option>
+                    }
+                </select>
+            </div>
+            <label>Дете (7-10год.)</label>
+            <div class="container ">
+                <select class="col-form-label-lg col-12">
+                    @foreach (var smqna in Model.Smeni)
+                    {
+                        <option value='smqna.Id'> @smqna.Dete_10</option>
+                    }
+                </select>
+            </div>
+            <label>Дете 10+год.</label>
+            <div class="container ">
+                <select class="col-form-label-lg col-12">
+                    @foreach (var smqna in Model.Smeni)
+                    {
+                        <option value='smqna.Id'> @smqna.Dete_12</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
