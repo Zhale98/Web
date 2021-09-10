@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Web.Models
 {
-    public class Bungala
+    public class Bungalo
     {
         public int Id { get; set; }
         public string Opisanie { get; set; }
