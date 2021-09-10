@@ -20,7 +20,7 @@ namespace Web.Models
         public int Dete_7 { get; set; }
         public int Dete_10 { get; set; }
         public int Dete_12 { get; set; }
-        public List<Smqna> Bungalo { get; set; }
+        public List<Bungala> Bungalo { get; set; }
         public List<Kategoriq> Kategorii { get; set; }
     }
 }

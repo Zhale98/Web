@@ -66,7 +66,18 @@ namespace Web.Controllers
                 Nomer = "VIII",
             });
 
+           
+            model.Bungalo.Add(new Bungala()
+                {
+               Id=1,
+            });
+            model.Bungalo.Add(new Bungala()
+            {
+                Id = 2,
+            });
+
             return View(model);
         }
+        
     }
 }

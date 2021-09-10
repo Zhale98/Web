@@ -17,11 +17,12 @@ namespace Web.Models
         public DateTime Do { get; set; }
         public string Ime { get; set; }
         public string Familiq { get; set; }
-        public int Bungalo { get; set; }
+        public int Bungala { get; set; }
         public int Cena { get; set; }
         public int Dete_7 { get; set; }
         public int Dete_10 { get; set; }
         public int Dete_12 { get; set; }
         public List<Smqna> Smeni { get; set; }
+        public object Bungalo { get; internal set; }
     }
 }
