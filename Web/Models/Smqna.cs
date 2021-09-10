@@ -15,10 +15,12 @@ namespace Web.Models
         public DateTime Do { get; set; }
         public string Nomer { get; set; }
         public int Dni { get; set; }
-        public int Bungalo { get; set; }
-        public string Kategoriq { get; set; }
+        public int Bungalo_Id { get; set; }
+        public string Kategoriq_Id { get; set; }
         public int Dete_7 { get; set; }
         public int Dete_10 { get; set; }
         public int Dete_12 { get; set; }
+        public List<Smqna> Bungalo { get; set; }
+        public List<Smqna> Kategoriq { get; set; }
     }
 }
