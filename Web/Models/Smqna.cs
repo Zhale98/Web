@@ -21,6 +21,6 @@ namespace Web.Models
         public int Dete_10 { get; set; }
         public int Dete_12 { get; set; }
         public List<Smqna> Bungalo { get; set; }
-        public List<Smqna> Kategoriq { get; set; }
+        public List<Kategoriq> Kategorii { get; set; }
     }
 }
