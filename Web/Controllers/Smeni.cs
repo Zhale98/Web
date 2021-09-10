@@ -67,11 +67,11 @@ namespace Web.Controllers
             });
 
            
-            model.Bungalo.Add(new Bungala()
+            model.Bungala.Add(new Bungalo()
                 {
                Id=1,
             });
-            model.Bungalo.Add(new Bungala()
+            model.Bungala.Add(new Bungalo()
             {
                 Id = 2,
             });
